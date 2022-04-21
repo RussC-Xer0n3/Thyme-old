@@ -6,7 +6,7 @@
 
  There are of course however, not obvious considerations to factor into the code and what has been discussed in https://github.com/RussC-Xer0n3/QBit-and-Gparticulates/blob/main/QuBits_GParticulates.pdf a subsequent loose write up of the code.
  
- There are considerations of gravity and magnetic fields in EMP and EMP which have not been factored in.
+ There are considerations of gravity and magnetic fields in EMP and EMF which have not been factored in.
  
  The shear scale of all variables and very few real constants in the universe and the space time continuum.
  
