@@ -17,6 +17,8 @@ Thought's, the signal might return from and to a different location based on our
 #include <math.h>
 #include <float.h>
 #include <time.h>
+#include "tsocket.h"
+#include "trigonomicquadratics.h"
 
 float A;
 float T;
