@@ -1,5 +1,5 @@
 # Thyme old
- <style>
+<style>
 /* The dropdown container */
 .dropdown {
   float: left;
