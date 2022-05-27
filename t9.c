@@ -27,7 +27,7 @@ float PT;
 float FT;
 float V;
 float PI;
-float DIM = 1;
+float DIM = 1; //TODO: TURN INTO A METHOD
 float SIG(C);
 
 //An afterthought
