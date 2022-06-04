@@ -39,7 +39,7 @@ float IN;
 float RAD = 1;
 
 
-float main (float argc, char **argv) {
+float main (float argc, char *argv[]) {
 
     //Time goes in recurrently
     #define IN T;
