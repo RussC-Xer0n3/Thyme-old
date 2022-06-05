@@ -48,51 +48,49 @@ float thyme (float argc, char *argv[]) {
     #define PI 3.1415926535
     #define A (pow((PI * RAD), DIM))
     #define SIG ((1) / (-1(C--)))
-    #define SIGMOID (1.0 / math.sum(-1, (exp(O)--)))
+    #define SIGMOID (1.0 / sum(-1, (exp(O)--)))
     
     //Preparing for NN and Biases
-    #define WEIGHT (modf((math.sum(randn() % 1.0), 0.0), float *wdiscard))
-    #define BIAS (modf((math.sum(randn() % 1.0), 0.0), float *bdiscard))
+    #define WEIGHT (modf((sum(randn() % 1.0), 0.0), float *wdiscard))
+    #define BIAS (modf((sum(randn() % 1.0), 0.0), float *bdiscard))
     
     //Weigh up the costs and gradient of descent
     #define COST (weights, BIAS)
-    #define GRAD_DESCENT (math.pow(((COST) - (COST(EPSILON))), 2))
+    #define GRAD_DESCENT (pow(((COST) - (COST(EPSILON))), 2))
         
     //Define constant first
-    #define C SIG(math.exp(math.pow(A), ((math.exp(IN++)) / (math.exp(--IN))))) //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
+    #define C SIG(exp(pow(A), ((exp(IN++)) / (exp(--IN))))) //predecrement all time as past time divide over increment of all time for continuum. Had to swap them as per order of operation
     //#define C SIG(exp(pow(A), ((exp(++PT)) / (exp(FT++))))) //preincrement the past and divide over the future
     
     //Begin telling computer about the past and future and all time
     #define PT ((FT % C) / T)
     #define FT (((T) / C) - PT)
-    #define T (math.exp((V / math.sum(PT, FT)) / (math.exp(math.pow(IN, DIM), (V)))))
+    #define T (exp((V / sum(PT, FT)) / (exp(pow(IN, DIM), (V)))))
     
     //Tell it what to calculate and what is going into the constant
-    #define V (math.pow(T, 3) / (PT - FT))
+    #define V (pow(T, 3) / (PT - FT))
     #define VEL [T, V]
     #define IN T
 
     //Markov Decision Process
     #define REWARD ((INPUT, N) / Y)
     #define PROBABILITY ((INPUT, Y) / N)
-    #define MDP (math.sum(REWARD, BIAS) / PROBABILITY)
+    #define MDP (sum(REWARD, BIAS) / PROBABILITY)
 
     //Implementation
     #define N INPUT++
     #define OUT SIGMOID((weights * N) + BIAS)
     
     //Calculate the probability
-    #define Q math.pow(math.pow(MDP, N), 2) + Y
+    #define Q pow(pow(MDP, N), 2) + Y
     #define R ((REWARD + BIAS) / Q)
 
     //Initialise the input, output and hidden layers of the network 
     #define INPUT ((T, OUT, OUTPUT) * WEIGHT) + BIAS
-    #define HIDDEN (((10 * math.pow(20, 4)) * WEIGHT * (INPUT))
-    #define OUTPUT math.sum(((4 * WEIGHT) / (HIDDEN)), BIAS)
+    #define HIDDEN (((10 * pow(20, 4)) * WEIGHT * (INPUT))
+    #define OUTPUT sum(((4 * WEIGHT) / (HIDDEN)), BIAS)
 
     #define X (Q*(PI*A)))
     #define PARTIAL ((X, Q++) / Y)
-    #define PARTIALMDP (math.sum(REWARD, BIAS) / PARTIAL)
-    
-    return 1;
+    #define PARTIALMDP (sum(REWARD, BIAS) / PARTIAL)
 }
